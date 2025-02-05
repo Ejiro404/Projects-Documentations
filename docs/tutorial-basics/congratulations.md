@@ -1,5 +1,6 @@
 ---
 sidebar_position: 6
+font-size: 2px
 ---
 
 # Congratulations!
