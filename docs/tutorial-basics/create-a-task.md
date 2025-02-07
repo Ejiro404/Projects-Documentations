@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Creating new Tasks
 
 ![Step 1](../../static/img/step1.png)
