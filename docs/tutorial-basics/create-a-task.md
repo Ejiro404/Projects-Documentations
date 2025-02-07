@@ -47,13 +47,19 @@ sidebar_position: 1
 2. Click **Save** to store the recipient details.
 3. Click **Back** to review or **Next** to continue.
 
+:::danger Caution
+
+Note that recipient will receive email updates when Milestones set to client view are ticked off
+
+:::
+
 ## Step 5: Assign Engineers
 
 ![Step 5](../../static/img/step4.png)
 1. Select an **Engineer** from the dropdown list:
-   - **Gideon Aniechi**
-   - **Adeola Ogundele**
-   - **Isaac Adebayo**
+   - **Engineer Name 1**
+   - **Engineer Name 2**
+   - **Engineer name 3**
    - *And many more...*
 2. Click **Add** to assign the engineer.
 3. Click **Close** when finished.
@@ -63,3 +69,4 @@ sidebar_position: 1
 - Make necessary adjustments if needed.
 - Click **Save** to finalize the task.
 - Your task is now successfully created!
+
