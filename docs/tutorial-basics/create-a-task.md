@@ -17,7 +17,7 @@
 
 ## Step 2: Add Equipment
 
-[Step 2](img/step2.png)
+![Step 2](../../static/img/step6.png)
 1. Click on **Add Equipment**.
 2. Select the appropriate **Equipment**.
 3. Choose the **Task Type** from the dropdown:
@@ -32,7 +32,7 @@
 
 ## Step 3: Define Task Milestones
 
-[Step 3](img/step3.png)
+![Step 3](../../static/img/step5.png)
 1. Define and enter relevant **Milestones** for the task.
 2. Click **Next** to proceed.
 
@@ -45,7 +45,7 @@
 
 ## Step 5: Assign Engineers
 
-[Step 5](img/step5.png)
+![Step 5](../../static/img/step4.png)
 1. Select an **Engineer** from the dropdown list:
    - **Gideon Aniechi**
    - **Adeola Ogundele**
