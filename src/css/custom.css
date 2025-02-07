@@ -34,3 +34,14 @@
   --ifm-font-size-base: 13px; /* Set your desired base font size */
 }
 
+:root {
+  --ifm-menu-color-background-active: #add8e6; /* Light blue in light mode */
+  --ifm-hero-background-color: #225b6e;
+  --ifm-menu-color-active:var(--ifm-menu-background-color);
+  --ifm-navbar-link-hover-color:var(--ifm-hero-background-color);
+  --ifm-navbar-link-active-color:var(--ifm-hero-background-color)
+}
+
+[data-theme='dark'] {
+  --ifm-menu-background-color: #1c1f2e; /* Dark mode */
+}
