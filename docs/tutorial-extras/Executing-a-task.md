@@ -64,3 +64,4 @@ sidebar_position: 1
 
    :::note
    If expenses of varying items were incurred use the **Add item**
+   :::
