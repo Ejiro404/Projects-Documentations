@@ -51,3 +51,16 @@ sidebar_position: 1
    ![step 6](./img/image7.png)
 
    This is the official template for job report after successfully executing the steps in creating a report.
+
+   # Expense Report
+   ![step 7](./img/image8.png)
+
+   The expense report tab is for any expense(s) incurred by the engineer, this is to take in details on what item was purchased in relation to job done or ongoing.
+
+   1. Upload your receipt for the expenses inccured (either pdf or image)
+   2. State item bought in the **item field**
+   3. Value of item in **Naira**
+   4. Quantity of item purchased in **units**
+
+   :::note
+   If expenses of varying items were incurred use the **Add item**
