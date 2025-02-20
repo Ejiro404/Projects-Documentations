@@ -4,13 +4,13 @@ sidebar_position: 1
 
 # Creating new Tasks
 
-![Step 1](../../static/img/step1.png)
+![Step 1](../../../static/img/step1.png)
 ## Step 1: Enter Task Details
 
 1. Navigate to the **Add Task** section.
-![Step 2](../../static/img/step2.png)
+![Step 2](../../../static/img/step2.png)
 2. Select the **Company** from the dropdown list.
-![Step 3](../../static/img/step3.png)
+![Step 3](../../../static/img/step3.png)
 3. Choose the **Location** for the task.
 4. Select the **Bill Category**:
    - **Chargeable**
@@ -21,7 +21,7 @@ sidebar_position: 1
 
 ## Step 2: Add Equipment
 
-![Step 2](../../static/img/step6.png)
+![Step 2](../../../static/img/step6.png)
 1. Click on **Add Equipment**.
 2. Select the appropriate **Equipment**.
 3. Choose the **Task Type** from the dropdown:
@@ -36,7 +36,7 @@ sidebar_position: 1
 
 ## Step 3: Define Task Milestones
 
-![Step 3](../../static/img/step5.png)
+![Step 3](../../../static/img/step5.png)
 1. Define and enter relevant **Milestones** for the task.
 2. Click **Next** to proceed.
 
@@ -55,7 +55,7 @@ Note that recipient will receive email updates when Milestones set to client vie
 
 ## Step 5: Assign Engineers
 
-![Step 5](../../static/img/step4.png)
+![Step 5](../../../static/img/step4.png)
 1. Select an **Engineer** from the dropdown list:
    - **Engineer Name 1**
    - **Engineer Name 2**

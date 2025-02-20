@@ -45,8 +45,8 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          //editUrl:
+          //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -88,7 +88,15 @@ const config = {
             position: 'left',
             label: 'Project System',
           },
-          {to: '/blog', label: 'Inventory and Subscription', position: 'left'},
+          {
+            path: 'inventory',
+            routeBasePath: 'inventory',
+            type: 'docSidebar',
+            sidebarId: 'inventorySidebar',
+            position: 'left',
+            label: 'Inventory and Subscription',
+          },
+          {to: '/blog', label: 'E-PMS', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
