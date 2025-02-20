@@ -6,7 +6,7 @@ The **expense approval** can be initiated by the lead engineer and the accountin
 The following steps demonstrates the expense approval done by the **lead engineer**:
 
 # Navigate to Expenses
-![expenses-front-tab](../tutorial-extras/img/id-exp.png)
+![expenses-front-tab](../tutorial-extras/img/id-exp1.png)
 
 You can toggle between expenses:
 - **View list of current expenses.**
