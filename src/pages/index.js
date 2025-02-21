@@ -49,13 +49,13 @@ export default function Home() {
               <Feature
                 title="Project System"
                 description="Streamline your task management with our intuitive platform. Create, assign, and track tasks effortlessly, ensuring milestones are met and operations run smoothly."
-                link="/docs/task-operations"
+                link="/docs/category/operations"
                 imgSrc="/img/task-operations.jpg"
               />
               <Feature
                 title="Inventory & Subscriptions Management"
                 description="Optimize your inventory and subscription services. Manage products, stocks, suppliers, and subscription plans efficiently to meet customer demands promptly."
-                link="/docs/inventory-subscriptions"
+                link="/docs/category/inventory-management"
                 imgSrc="/img/inventory-management.jpg"
               />
               <Feature
