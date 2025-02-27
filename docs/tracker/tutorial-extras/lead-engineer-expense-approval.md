@@ -5,19 +5,19 @@ The **expense approval** can be initiated by the lead engineer and the accountin
 
 The following steps demonstrates the expense approval done by the **lead engineer**:
 
-# Navigate to Expenses
+## Navigate to Expenses
 ![expenses-front-tab](../tutorial-extras/img/id-exp1.png)
 
 You can toggle between expenses:
 - **View list of current expenses.**
 - **View list of previous expenses.**
 
-# Details of an Expense
+## Details of an Expense
 ![detail-of-expense](../tutorial-extras/img/id-exp2.png)
 
 An expense tab entails the following details above, an assigned engineer can examine and either **approve** or **disapprove.**
 
-# Expense Remark
+## Expense Remark
 ![expense-remark](../tutorial-extras/img/id-exp3.png)
 
 The remark modal appears after either selecting **approve or disapprove.**

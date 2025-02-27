@@ -8,7 +8,7 @@ The **knowledge base** feature is used to document equipment-related issues and 
 
 ![front-page](./img/image9.png)
 
-# Search and Open Filter feature
+## Search and Open Filter feature
 ![search-image](./img/searchbtn.png)
 
 The **search feature**  is used to look for the equipment in relation to the task.
@@ -30,7 +30,7 @@ This shows the detail of an **equipment-related solution** detailing:
 2. Manifestation (summary of issue)
 3. Solution(s) to the manifestation
 
-# Solution Details
+## Solution Details
 
 The solution drop down menu details entails:
 

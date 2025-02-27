@@ -96,7 +96,13 @@ const config = {
             position: 'left',
             label: 'Inventory and Subscription',
           },
-          {to: '/blog', label: 'E-PMS', position: 'left'},
+          {
+            type: 'docSidebar',
+            sidebarId: 'empsSidebar',
+            position: 'left',
+            label: 'E-PMS',
+          },
+          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
