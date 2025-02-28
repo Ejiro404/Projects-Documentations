@@ -5,12 +5,12 @@ sidebar_position: 1
 # Executing a task
  ![Guidelines](./img/image1.png)
 
- # Equipment Information
+ ## Equipment Information
  This shows the equipment utilised by the assigned engineer, entailing : **equipment name**, **model**, **manufacture** and **job type**
 
  ![step1](./img/image2.png)
 
-  # Create Report
+  ## Create Report
   To create a report you must follow four steps:
 
   # Step 1:
@@ -47,12 +47,12 @@ sidebar_position: 1
    3. **Part Replaced.**
    4. **Notes: anything of significance to the debrief been created.**
 
-   # Report
+   ## Report
    ![step 6](./img/image7.png)
 
    This is the official template for job report after successfully executing the steps in creating a report.
 
-   # Expense Report
+   ## Expense Report
    ![step 7](./img/image8.png)
 
    The expense report tab is for any expense(s) incurred by the engineer, this is to take in details on what item was purchased in relation to job done or ongoing.
