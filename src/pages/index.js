@@ -48,19 +48,19 @@ export default function Home() {
             <div className="row">
               <Feature
                 title="Project System"
-                description="Streamline your task management with our intuitive platform. Create, assign, and track tasks effortlessly, ensuring milestones are met and operations run smoothly."
+                description="Streamline task management with this intuitive platform. Create, assign, and track tasks effortlessly, ensuring milestones are met and operations run smoothly."
                 link="/docs/category/operations"
                 imgSrc="/img/task-operations.jpg"
               />
               <Feature
                 title="Inventory & Subscriptions Management"
-                description="Optimize your inventory and subscription services. Manage products, stocks, suppliers, and subscription plans efficiently to meet customer demands promptly."
+                description="Optimize inventory and subscription services. Manage products, stocks, suppliers, and subscription plans efficiently to meet customer demands promptly."
                 link="/docs/category/inventory-management"
                 imgSrc="/img/inventory-management.jpg"
               />
               <Feature
-                title="Enterprise Project Management System (E-PMS)"
-                description="Elevate your project oversight with E-PMS. Manage clients, projects, and contracts seamlessly, ensuring effective communication and project success."
+                title="Electronic Personnel Management System (E-PMS)"
+                description="Elevate client management with E-PMS. Stay on time, Manage clients and assets seamlessly, ensuring effective communication and customer satisfaction."
                 link="/docs/e-pms"
                 imgSrc="/img/e-pms.jpg"
               />

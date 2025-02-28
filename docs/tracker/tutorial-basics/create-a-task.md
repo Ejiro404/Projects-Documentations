@@ -42,7 +42,7 @@ sidebar_position: 1
 
 ## Step 4: Add Mail Recipients
 
-[Step 4](img/step4.png)
+[Step 4]
 1. Enter the **Name** and **Email** of the recipient(s).
 2. Click **Save** to store the recipient details.
 3. Click **Back** to review or **Next** to continue.
