@@ -22,8 +22,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Fieldbase', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'fbase-dev', // Usually your GitHub org/user name.
+  projectName: 'projects_documentation', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -96,6 +96,7 @@ const config = {
             position: 'left',
             label: 'Inventory and Subscription',
           },
+
           {
             type: 'docSidebar',
             sidebarId: 'empsSidebar',
@@ -103,6 +104,7 @@ const config = {
             label: 'E-PMS',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/flow', label: 'Workflow', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -160,6 +162,8 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+    
 };
+
 
 export default config;
