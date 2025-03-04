@@ -4,39 +4,42 @@ import ReactFlow, { Background, Controls } from "react-flow-renderer";
 import "../css/flow.css"; // Import custom CSS
 
 
-const nodes = [
-  { id: '1', type: 'input', data: { label: 'Customer Order (Zoho, Email)' }, position: { x: 100, y: 50 } },
-  { id: '2', data: { label: 'Requirement Form' }, position: { x: 100, y: 150 } },
-  { id: '3', data: { label: 'Risk Assessment' }, position: { x: 300, y: 150 } },
-  { id: '4', data: { label: 'Approved' }, position: { x: 500, y: 100 }, style: { backgroundColor: 'green', color: 'white' } },
-  { id: '5', data: { label: 'Management Assessment' }, position: { x: 500, y: 200 } },
-  { id: '6', data: { label: 'Rejected' }, position: { x: 700, y: 150 }, style: { backgroundColor: 'red', color: 'white' } },
-  { id: '7', data: { label: 'Send Contract to Client' }, position: { x: 700, y: 50 } },
-  { id: '8', data: { label: 'Client Signs Online' }, position: { x: 900, y: 50 } },
-  { id: '9', data: { label: 'Technical Advice Form' }, position: { x: 700, y: 300 } },
-  { id: '10', data: { label: 'Expense Request' }, position: { x: 900, y: 300 } },
-  { id: '11', data: { label: 'Declined' }, position: { x: 1100, y: 250 }, style: { backgroundColor: 'red', color: 'white' } },
-  { id: '12', data: { label: 'Approve Expense' }, position: { x: 1100, y: 350 }, style: { backgroundColor: 'green', color: 'white' } },
-  { id: '13', data: { label: 'Does the Job' }, position: { x: 1300, y: 350 } },
-  { id: '14', data: { label: 'Job Report (EPMS App)' }, position: { x: 1500, y: 350 } },
-];
+const commonNodeStyle = { color: 'white', padding: '10px' };
 
-const edges = [
-  { id: 'e1', source: '1', target: '2' },
-  { id: 'e2', source: '2', target: '3' },
-  { id: 'e3', source: '3', target: '4', label: 'Low Risk' },
-  { id: 'e4', source: '3', target: '5', label: 'High Risk' },
-  { id: 'e5', source: '5', target: '6', label: 'Risk Too High' },
-  { id: 'e6', source: '5', target: '4', label: 'Acceptable Risk' },
-  { id: 'e7', source: '4', target: '7' },
-  { id: 'e8', source: '7', target: '8' },
-  { id: 'e9', source: '4', target: '9' },
-  { id: 'e10', source: '9', target: '10' },
-  { id: 'e11', source: '10', target: '11', label: 'Decline' },
-  { id: 'e12', source: '10', target: '12', label: 'Approve' },
-  { id: 'e13', source: '12', target: '13' },
-  { id: 'e14', source: '13', target: '14' },
-];
+const nodes = [
+    { id: '1', type: 'input', data: { label: <a href="/docs/customer-order" target="_blank" rel="noopener noreferrer" style={commonNodeStyle}>Customer Order (Zoho, Email)</a> }, position: { x: 100, y: 50 }, style: { backgroundColor: '#333' } },
+    { id: '2', data: { label: <a href="/docs/requirement-form" target="_blank" rel="noopener noreferrer" style={commonNodeStyle}>Requirement Form</a> }, position: { x: 100, y: 200 }, style: { backgroundColor: '#333' } },
+    { id: '3', data: { label: <a href="/docs/risk-assessment" target="_blank" rel="noopener noreferrer" style={commonNodeStyle}>Risk Assessment</a> }, position: { x: 400, y: 200 }, style: { backgroundColor: '#333' } },
+    { id: '4', data: { label: <a href="/docs/approved" target="_blank" rel="noopener noreferrer" style={commonNodeStyle}>Approved</a> }, position: { x: 800, y: 100 }, style: { backgroundColor: 'green' } },
+    { id: '5', data: { label: <a href="/docs/management-assessment" target="_blank" rel="noopener noreferrer" style={commonNodeStyle}>Management Assessment</a> }, position: { x: 800, y: 300 }, style: { backgroundColor: '#333' } },
+    { id: '6', data: { label: <a href="/docs/rejected" target="_blank" rel="noopener noreferrer" style={commonNodeStyle}>Rejected</a> }, position: { x: 1100, y: 250 }, style: { backgroundColor: 'red' } },
+    { id: '7', data: { label: <a href="/docs/send-contract" target="_blank" rel="noopener noreferrer" style={commonNodeStyle}>Send Contract to Client</a> }, position: { x: 1100, y: 100 }, style: { backgroundColor: '#333' } },
+    { id: '8', data: { label: <a href="/docs/client-signs" target="_blank" rel="noopener noreferrer" style={commonNodeStyle}>Client Signs Online</a> }, position: { x: 1400, y: 100 }, style: { backgroundColor: '#333' } },
+    { id: '9', data: { label: <a href="/docs/technical-advice" target="_blank" rel="noopener noreferrer" style={commonNodeStyle}>Technical Advice Form</a> }, position: { x: 1100, y: 450 }, style: { backgroundColor: '#333' } },
+    { id: '10', data: { label: <a href="/docs/expense-request" target="_blank" rel="noopener noreferrer" style={commonNodeStyle}>Expense Request</a> }, position: { x: 1400, y: 450 }, style: { backgroundColor: '#333' } },
+    { id: '11', data: { label: <a href="/docs/declined" target="_blank" rel="noopener noreferrer" style={commonNodeStyle}>Declined</a> }, position: { x: 1700, y: 400 }, style: { backgroundColor: 'red' } },
+    { id: '12', data: { label: <a href="/docs/approve-expense" target="_blank" rel="noopener noreferrer" style={commonNodeStyle}>Approve Expense</a> }, position: { x: 1700, y: 500 }, style: { backgroundColor: 'green' } },
+    { id: '13', data: { label: <a href="/docs/tracker/tutorial-basics/create-a-task" target="_blank" rel="noopener noreferrer" style={commonNodeStyle}>Does the Job</a> }, position: { x: 2000, y: 500 }, style: { backgroundColor: '#333' } },
+    { id: '14', data: { label: <a href="/docs/tracker/tutorial-extras/Executing-a-task" target="_blank" rel="noopener noreferrer" style={commonNodeStyle}>Job Execution and Report (Tracker App)</a> }, position: { x: 2300, y: 500 }, style: { backgroundColor: '#333' } },
+  ];
+  
+  const edges = [
+    { id: 'e1', source: '1', target: '2', markerEnd: { type: 'arrowclosed' }, style: { strokeWidth: 3 } },
+    { id: 'e2', source: '2', target: '3', markerEnd: { type: 'arrowclosed' }, style: { strokeWidth: 3 } },
+    { id: 'e3', source: '3', target: '4', label: 'Low Risk', markerEnd: { type: 'arrowclosed' }, style: { strokeWidth: 3 } },
+    { id: 'e4', source: '3', target: '5', label: 'High Risk', markerEnd: { type: 'arrowclosed' }, style: { strokeWidth: 3 } },
+    { id: 'e5', source: '5', target: '6', label: 'Risk Too High', markerEnd: { type: 'arrowclosed' }, style: { strokeWidth: 3 } },
+    { id: 'e6', source: '5', target: '4', label: 'Acceptable Risk', markerEnd: { type: 'arrowclosed' }, style: { strokeWidth: 3 } },
+    { id: 'e7', source: '4', target: '7', markerEnd: { type: 'arrowclosed' }, style: { strokeWidth: 3 } },
+    { id: 'e8', source: '7', target: '8', markerEnd: { type: 'arrowclosed' }, style: { strokeWidth: 3 } },
+    { id: 'e9', source: '4', target: '9', markerEnd: { type: 'arrowclosed' }, style: { strokeWidth: 3 } },
+    { id: 'e10', source: '9', target: '10', markerEnd: { type: 'arrowclosed' }, style: { strokeWidth: 3 } },
+    { id: 'e11', source: '10', target: '11', label: 'Decline', markerEnd: { type: 'arrowclosed' }, style: { strokeWidth: 3 } },
+    { id: 'e12', source: '10', target: '12', label: 'Approve', markerEnd: { type: 'arrowclosed' }, style: { strokeWidth: 3 } },
+    { id: 'e13', source: '12', target: '13', markerEnd: { type: 'arrowclosed' }, style: { strokeWidth: 3 } },
+    { id: 'e14', source: '13', target: '14', markerEnd: { type: 'arrowclosed' }, style: { strokeWidth: 3 } },
+  ];
+  
 
 
 
