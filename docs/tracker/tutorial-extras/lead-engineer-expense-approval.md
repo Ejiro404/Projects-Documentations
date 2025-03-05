@@ -17,7 +17,7 @@ You can toggle between expenses:
 
 An expense tab entails the following details above, an assigned engineer can examine and either **approve** or **disapprove.**
 
-#p# Expense Remark
+## Expense Remark
 ![expense-remark](../tutorial-extras/img/id-exp3.png)
 
 The remark modal appears after either selecting **approve or disapprove.**
