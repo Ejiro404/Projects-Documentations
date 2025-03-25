@@ -1,11 +1,13 @@
 # Customer Management
 
 ## Overview
+![Customers Page](./images/customers_page.png)
 The **Customer Page** allows users to manage customer information, including adding new customers, importing customer data, and viewing existing customer records.
 
 ## Features
 - **View Customers**: Displays a list of customers, including their name, type, email, country, and creation date.
 - **Add Customer**:
+![Add Customers](./images/add_customer.png)
   1. Click on **Add Customer**.
   2. Enter the required details:
      - Customer Type
@@ -14,6 +16,7 @@ The **Customer Page** allows users to manage customer information, including add
      - Country
   3. Click **Save** to add the customer.
 - **Import Customers**:
+![Import Customers](./images/import_customers.png)
   1. Click **Import Customers**.
   2. Select **Import Source** (Spreadsheet).
   3. Download the default template, fill in customer details, and upload the spreadsheet.
