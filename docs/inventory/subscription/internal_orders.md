@@ -1,11 +1,13 @@
 # Manage Internal Orders
 
 ## Overview
+![Internal Orders](./images/internal_orders.png)
 The **Internal Orders Page** manages orders between internal warehouses.
 
 ## Features
 - **View Internal Orders**: Displays order details including order number, from warehouse, to warehouse, status, and date created.
 - **Create Internal Order**:
+![create Internal Order](./images/create_internal_order.png)
   1. Click on **Create Internal Order**.
   2. Fill in the required details:
      - Order Number

@@ -21,6 +21,8 @@ const nodes = [
     { id: '12', data: { label: <a href="/docs/approve-expense" target="_blank" rel="noopener noreferrer" style={commonNodeStyle}>Approve Expense</a> }, position: { x: 1700, y: 500 }, style: { backgroundColor: 'green' } },
     { id: '13', data: { label: <a href="/docs/tracker/tutorial-basics/create-a-task" target="_blank" rel="noopener noreferrer" style={commonNodeStyle}>Does the Job</a> }, position: { x: 2000, y: 500 }, style: { backgroundColor: '#333' } },
     { id: '14', data: { label: <a href="/docs/tracker/tutorial-extras/Executing-a-task" target="_blank" rel="noopener noreferrer" style={commonNodeStyle}>Job Execution and Report (Tracker App)</a> }, position: { x: 2300, y: 500 }, style: { backgroundColor: '#333' } },
+    { id: '15', data: { label: <a href="/docs/e-pms/pms-modules/company-list" target="_blank" rel="noopener noreferrer" style={commonNodeStyle}>Register Company and Vessel (E-PMS)</a> }, position: { x: 400, y: 300 }, style: { backgroundColor: '#333' } },
+    { id: '16', data: { label: <a href="/docs/category/inventory-management" target="_blank" rel="noopener noreferrer" style={commonNodeStyle}>Create Subscription on Inventory</a> }, position: { x: 2600, y: 500 }, style: { backgroundColor: '#333' } },
   ];
   
   const edges = [
@@ -38,6 +40,8 @@ const nodes = [
     { id: 'e12', source: '10', target: '12', label: 'Approve', markerEnd: { type: 'arrowclosed' }, style: { strokeWidth: 3 } },
     { id: 'e13', source: '12', target: '13', markerEnd: { type: 'arrowclosed' }, style: { strokeWidth: 3 } },
     { id: 'e14', source: '13', target: '14', markerEnd: { type: 'arrowclosed' }, style: { strokeWidth: 3 } },
+    { id: 'e2', source: '2', target: '15', label: 'Maritime?', markerEnd: { type: 'arrowclosed' }, style: { strokeWidth: 3 } },
+    { id: 'e14', source: '14', target: '16', markerEnd: { type: 'arrowclosed' }, style: { strokeWidth: 3 } },
   ];
   
 
@@ -55,3 +59,4 @@ export default function FlowPage() {
     </Layout>
   );
 }
+
