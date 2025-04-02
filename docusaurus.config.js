@@ -86,7 +86,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Project System',
+            label: 'Tracker',
           },
           {
             path: 'inventory',
@@ -115,7 +115,7 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
+          /*{
             title: 'Docs',
             items: [
               {
@@ -123,7 +123,7 @@ const config = {
                 to: '/docs/intro',
               },
             ],
-          },
+          },*/
           {
             title: 'Community',
             items: [
@@ -155,7 +155,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Fieldbase Services Ltd.`,
       },
       prism: {
         theme: prismThemes.github,
