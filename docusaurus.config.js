@@ -103,6 +103,14 @@ const config = {
             position: 'left',
             label: 'E-PMS',
           },
+
+          {
+            type: 'docSidebar',
+            sidebarId: 'starlinkSidebar',
+            position: 'left',
+            label: 'Starlink Operations',
+          },
+          
           //{to: '/blog', label: 'Blog', position: 'left'},
           {to: '/flow', label: 'Workflow', position: 'left'},
           {
