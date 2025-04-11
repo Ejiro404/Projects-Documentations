@@ -86,7 +86,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Project System',
+            label: 'Tracker',
           },
           {
             path: 'inventory',
@@ -103,6 +103,14 @@ const config = {
             position: 'left',
             label: 'E-PMS',
           },
+
+          {
+            type: 'docSidebar',
+            sidebarId: 'starlinkSidebar',
+            position: 'left',
+            label: 'Starlink Operations',
+          },
+          
           //{to: '/blog', label: 'Blog', position: 'left'},
           {to: '/flow', label: 'Workflow', position: 'left'},
           {
@@ -115,7 +123,7 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
+          /*{
             title: 'Docs',
             items: [
               {
@@ -123,7 +131,7 @@ const config = {
                 to: '/docs/intro',
               },
             ],
-          },
+          },*/
           {
             title: 'Community',
             items: [
@@ -155,7 +163,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Fieldbase Services Ltd.`,
       },
       prism: {
         theme: prismThemes.github,

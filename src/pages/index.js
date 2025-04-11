@@ -3,17 +3,18 @@ import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
-import styles from './index.module.css'; 
+import styles from './index.module.css';
 
 function HomepageHeader() {
+  console.log(styles);
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">FieldBase Applications for Efficient Operations</h1>
-        <p className="hero__subtitle">
+      <div className={styles.container}>
+        <h1 className={styles.heroTitle}>FieldBase Applications for Efficient Operations</h1>
+        <p className={styles.heroSubtitle}>
           Discover cutting-edge solutions tailored for the maritime and enterprise operations. Enhance efficiency, security, and connectivity with our innovative platforms.
         </p>
-        <div className={styles.buttons}>
+        <div className={styles.getButton}>
           <Link className="button button--secondary button--lg" to="/docs/intro">
             Get Started
           </Link>
@@ -23,7 +24,61 @@ function HomepageHeader() {
   );
 }
 
-function Feature({ title, description, link, imgSrc }) {
+function Card({ title, description, link, imgSrc }) {
+  return (
+      <div className={styles.card}>
+        <img src={imgSrc} alt={title} />
+        <div className={styles["card-content"]}>
+          <h3>{title}</h3>
+          <p>{description}</p>
+          <div className={styles.button}>
+            <Link className="button button--primary" to={link}>
+              Learn More
+            </Link>
+          </div>
+        </div>
+      </div>
+  )
+}
+
+
+export default function Home() {
+  return (
+    <Layout
+      title="Fieldbase Documentation"
+      description="Comprehensive guides and documentation to help you integrate and utilize Fieldbase solutions effectively.">
+      <HomepageHeader />
+      <main>
+        <section className="features">
+          <div className="ft-cont">
+            <div className={styles["card-container"]}>
+              <Card
+                title="Tracker"
+                description="Streamline task management with this intuitive platform. Create, assign, and track tasks effortlessly, ensuring milestones are met and operations run smoothly."
+                link="/docs/category/operations"
+                imgSrc="/img/task-operations.jpg"
+              />
+              <Card
+                title="Inventory & Subscriptions Management"
+                description="Optimize inventory and subscription services. Manage products, stocks, suppliers, and subscription plans efficiently to meet customer demands promptly."
+                link="/docs/category/inventory-management"
+                imgSrc="/img/inventory-management.jpg"
+              />
+              <Card
+                title="Electronic Personnel Management System"
+                description="Elevate client management with E-PMS. Stay on time, Manage clients and assets seamlessly, ensuring effective communication and customer satisfaction."
+                link="/docs/e-pms/crm-modules/bookings"
+                imgSrc="/img/e-pms.jpg"
+              />
+            </div>
+          </div>
+      </section>
+    </main>
+    </Layout >
+  );
+}
+
+/*function Feature({ title, description, link, imgSrc }) {
   return (
     <div className={clsx('col col--4', styles.feature)}>
       <img src={imgSrc} alt={title} className={styles.featureImage} />
@@ -34,9 +89,9 @@ function Feature({ title, description, link, imgSrc }) {
       </Link>
     </div>
   );
-}
+}*/
 
-export default function Home() {
+/*export default function Home() {
   return (
     <Layout
       title="FieldBase Documentation"
@@ -70,4 +125,5 @@ export default function Home() {
       </main>
     </Layout>
   );
-}
+}*/
+
