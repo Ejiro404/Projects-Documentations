@@ -1,5 +1,5 @@
 # Use Node 23 alpine as base image
-FROM node:23-alpine3 AS base
+FROM node:23-alpine3.20 AS base
 
 ARG BUILD_DATE=unknown
 LABEL build_date=$BUILD_DATE
