@@ -11,8 +11,8 @@ WORKDIR /build
 # Copy the package.json and package-lock.json files to the /build directory
 COPY package*.json yarn*.lock ./
 RUN \
-    if [ -f yarn.lock ]; then yarn --frozen-lockfile; \
     # Install production dependencies and clean the cache
+    if [ -f yarn.lock ]; then yarn install && build --frozen-lockfile; \
     elif [ -f package-lock.json ]; then npm ci --omit=dev && npm cache clean --force;  \
     else echo "Lockfile not found." && exit 1; \
     fi
@@ -20,12 +20,8 @@ RUN \
 # Copy the entire source code into the container
 COPY . .
 
-RUN yarn build
-
-ENV PORT=3005
-
 # Document the port that may need to be published
 EXPOSE 3005
 
 # Start the application
-CMD ["yarn", "start"]
+CMD ["npm", "start", "--", "--host", "0.0.0.0"]
