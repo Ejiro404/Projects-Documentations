@@ -22,6 +22,8 @@ COPY . .
 
 RUN yarn build
 
+ENV PORT=3005
+
 # Document the port that may need to be published
 EXPOSE 3005
 
