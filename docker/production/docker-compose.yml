@@ -1,7 +1,7 @@
 version: '3.6'
 
 services:
-  fieldbase-docker:
+  fieldbase-docs:
     build:
       context: ../../
       dockerfile: docker/production/Dockerfile
