@@ -10,4 +10,4 @@ services:
       replicas: 2
     restart: on-failure
     ports:
-      - '3000:3005'
+      - '3005:3005'

@@ -23,7 +23,7 @@ COPY . .
 RUN yarn build
 
 # Document the port that may need to be published
-EXPOSE 3000
+EXPOSE 3005
 
 # Start the application
 CMD ["npm", "start"]
