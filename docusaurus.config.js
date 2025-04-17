@@ -108,7 +108,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'starlinkSidebar',
             position: 'left',
-            label: 'Starlink Operations',
+            label: 'Starlink',
           },
           
           //{to: '/blog', label: 'Blog', position: 'left'},

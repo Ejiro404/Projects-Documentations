@@ -1,0 +1,15 @@
+---
+sidebar_position: 3
+sidebar_label: View Devices
+---
+
+# View Devices Page
+
+## Overview
+Displays all active Starlinks associated with a company, their status, and available actions.
+
+## Features
+- **Company Starlinks List:** Lists all Starlink services for the selected company.
+- **Download CSV:** Export device data in CSV format.
+- **Add Starlink:** Opens the Add Starlink Pop-up.
+- **View Sales Portal:** Redirects to the sales portal.
