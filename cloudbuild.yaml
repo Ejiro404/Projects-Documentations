@@ -1,56 +1,22 @@
 steps:
-  # Pull the existing image for caching if it exists
-  - name: 'gcr.io/cloud-builders/docker'
-    entrypoint: 'bash'
-    args:
-      - '-c'
-      - |
-        docker pull gcr.io/fabled-mystery-328210/fb-docs:latest || exit 0
-  # Build the Docker image with a timestamp to invalidate cache
-  - name: 'gcr.io/cloud-builders/docker'
-    args: [
-      'build',
-      '--cache-from', 'gcr.io/fabled-mystery-328210/fb-docs:latest',
-      '--build-arg', 'BUILD_DATE=$(date +%s)',
-      '-t', 'gcr.io/fabled-mystery-328210/fb-docs:latest',
-      '-f', './docker/production/Dockerfile',
-      '.'
-    ]
+  - name: gcr.io/cloud-builders/docker
+    id: Build and push Docker Image
+    args: ["build", "-f", "docker/production/Dockerfile", "-t", "gcr.io/fabled-mystery-328210/fb-docs:$COMMIT_SHA", "."]
+ 
   # Push the Docker image to Google Container Registry
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/fabled-mystery-328210/fb-docs:latest']
-  # Deploy the image to the VM using Docker Swarm using SSH and handle code directory
-  - name: 'gcr.io/cloud-builders/gcloud'
-    entrypoint: 'bash'
-    args:
-      - '-c'
-      - |
-        # Write the private key to a file
-        echo "$${FB_WEBSITE_DEPLOYMENT_KEY}" > /root/ssh_key
-        chmod 600 /root/ssh_key
-        echo "VM IP value: $${FB_WEBSITE_VM_IP}"
+    args: ['push', 'gcr.io/fabled-mystery-328210/fb-docs:$COMMIT_SHA']
 
-        # Add VM host key to known hosts (more robust)
-        mkdir -p /root/.ssh
-        command -v ssh-keyscan >/dev/null 2>&1 || (echo "ssh-keyscan not found, ensure it's installed"; exit 1)
-        ssh-keyscan -H $${FB_WEBSITE_VM_IP} >> /root/.ssh/known_hosts
+  - name: gcr.io/cloud-builders/gcloud
+    entrypoint: bash
+    args: ['docker/production/deploy.sh']
+    env:
+      - 'PROJECT_ID=$PROJECT_ID'
+      - 'COMMIT_SHA=$COMMIT_SHA'
+      - 'USER=preci'
+      - 'PRODUCTION_IP=34.69.23.34'
 
-        # Copy the docker-compose.yml file to the Swarm manager and deploy
-        command -v scp >/dev/null 2>&1 || (echo "scp not found, ensure it's installed"; exit 1)
-        scp -i /root/ssh_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/root/.ssh/known_hosts ./docker/production/docker-compose.yml muheeb_ridwan@$${FB_WEBSITE_VM_IP}:/tmp/docker-compose.yml
-
-        command -v ssh >/dev/null 2>&1 || (echo "ssh not found, ensure it's installed"; exit 1)
-        ssh -i /root/ssh_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/root/.ssh/known_hosts muheeb_ridwan@$${FB_WEBSITE_VM_IP} "sudo docker stack deploy -c /tmp/docker-compose.yml fb-website --with-registry-auth"
-    secretEnv: ['FB_WEBSITE_DEPLOYMENT_KEY', 'FB_WEBSITE_VM_IP']
-# Define the secrets needed for deployment
-availableSecrets:
-  secretManager:
-    - versionName: projects/fabled-mystery-328210/secrets/FB_WEBSITE_DEPLOYMENT_KEY/versions/latest
-      env: 'FB_WEBSITE_DEPLOYMENT_KEY'
-    - versionName: projects/fabled-mystery-328210/secrets/FB_WEBSITE_VM_IP/versions/latest
-      env: 'FB_WEBSITE_VM_IP'
 images:
-  - 'gcr.io/fabled-mystery-328210/fb-docs:latest'
+  - "gcr.io/$PROJECT_ID/fb-docs:$COMMIT_SHA"
 options:
   defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
-serviceAccount: "fb-epms-sa@fabled-mystery-328210.iam.gserviceaccount.com"

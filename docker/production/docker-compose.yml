@@ -2,14 +2,9 @@ version: '3.6'
 
 services:
   fieldbase-docs:
-    build:
-      context: ../../
-      dockerfile: docker/production/Dockerfile
-    image: 'gcr.io/fabled-mystery-328210/fb-docs:latest'
-    deploy:
-      replicas: 2
+    image: 'gcr.io/fabled-mystery-328210/fb-docs:TAG'
     restart: on-failure
     ports:
-      - '3005:3005'
+      - 3005:3005
     environment:
       - PORT=3005
