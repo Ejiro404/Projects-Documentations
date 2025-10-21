@@ -23,23 +23,22 @@ The Dashboard serves as a quick access for system wide metrics and activity summ
 2. **Ongoings:** Request being processed
 3. **Completed:** Fulfilled installations or service
 4. **Cancelled:** Dropped or invalidated requests
-5. **Archived:** Historical records, not actively managed
 
 **Features**
 1. Sort by Date, Company, or Location
 2. View Staff Assignments
 3. Export request lists
-4. Bulk actions for archiving or cancelling
+4. Bulk actions for cancelling
 
 ## Request Details
 
-| Column              | Description                          |
+| Column               | Description                          |
 |----------------------|--------------------------------------|
+|  Name                | The full name of the lead.           | 
 | Company              | Organizing submitting request        |
 | Location             | Address or region of requester       |
-| Business Type        | Enterprise or residential            |
 | Date Requested       | When the request was made            |
 | Estimated Delivery   | Delivery target date                 |
-| Staff Name           | Assigned personnel (if any)          |
+
 
  **Action:** Click on a request to view or assign staff.

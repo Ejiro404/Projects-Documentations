@@ -5,17 +5,26 @@ sidebar_label: Add Starlink
 
 # Add Starlink Pop-up Page
 ![Add Starlink](./images/add_starlink.png)
+
 ## Overview
-This pop-up page allows users to add a new Starlink service for a company.
+
+The **Add Starlink** form allows users to register a new Starlink kit by entering the required details.
+
+---
 
 ## Fields
-- **Company Name:** Select the company for which the service is being added.
-- **First Name & Last Name:** Enter user details.
-- **Email & Phone:** Contact details of the service owner.
-- **Service Line No.:** Enter the assigned service line number.
-- **Site & Maritime Enterprise Details:** Specify the site details.
-- **Vessel Name & Kit Number:** Provide relevant vessel and kit information.
+
+- **Service Address** (Required): Enter the physical location where the Starlink service will be used.  
+- **Kit Number** (Required): The unique identifier of the Starlink kit, usually beginning with `KIT`.  
+- **Nickname** (Optional): A user-defined label for easier identification.  
+- **Subscription Type** (Required): Select the appropriate subscription plan (e.g., Residential, Business, Maritime).  
+
+---
 
 ## Actions
-- **[Add Starlink]**: Saves the entered details and adds the service.
-- **[Cancel]**: Closes the pop-up without saving changes.
+
+- **Submit**: Validates the inputs and registers the kit. On success, the form closes and the new kit is added to the list. On failure, an error message is displayed.  
+- **Close**: Cancels the operation and closes the form without saving changes.  
+- **Having issues with the Kit ID?**: Opens a help link for troubleshooting problems related to Kit IDs.  
+
+---

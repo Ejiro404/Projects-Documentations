@@ -23,23 +23,25 @@ The Dashboard serves as a quick access for system wide metrics and activity summ
 2. **Ongoings:** Request being processed
 3. **Completed:** Fulfilled installations or service
 4. **Cancelled:** Dropped or invalidated requests
-5. **Archived:** Historical records, not actively managed
 
 **Features**
 1. Sort by Date, Company, or Location
 2. View Staff Assignments
 3. Export request lists
-4. Bulk actions for archiving or cancelling
+4. Bulk actions for cancelling
 
 ## Request Details
 
-| Column              | Description                          |
-|----------------------|--------------------------------------|
-| Company              | Organizing submitting request        |
-| Location             | Address or region of requester       |
-| Business Type        | Enterprise or residential            |
-| Date Requested       | When the request was made            |
-| Estimated Delivery   | Delivery target date                 |
-| Staff Name           | Assigned personnel (if any)          |
+| Column               | Description                                       |
+|----------------------|---------------------------------------------------|
+| Company              | The company or organization linked to the request |
+| Location             | Client’s service or installation address          |
+| Date Requested       | The date the request was submitted                |
+| Estimated Delivery   | Expected date for service delivery                |
+| Name                 | Name of the client who submitted the request      |
 
- **Action:** Click on a request to view or assign staff.
+**Action:** Each row has an **Action Menu** (three dots) on the far right.
+This menu provides essential tools for managing individual requests:
+- **View Details:** Opens a detailed summary of the client’s request, including status history and contact info.
+- **Initiate Job:** Starts the service or installation process. This action moves the request to the **Ongoing** category. 
+- **Cancel:** Marks the request as cancelled and removes it from active queues. |

@@ -9,17 +9,16 @@ sidebar_label: Clients Management
 
 ## Purpose 
 
-Manage existing customer recors and their associated devices 
+Manage existing customer records and their associated devices 
 
 ## Table Columns
 
 | Field         | Description                        |
 |---------------|------------------------------------|
 | Name          | Client or company representative   |
-| Role          | User access level                  |
 | Company       | Client's company name              |
 | Email         | Client's email                     |
-| Total Device  | Number of registered devices       |
+|Total Device(s)| Number of registered device        |
 
 
 **Features** 

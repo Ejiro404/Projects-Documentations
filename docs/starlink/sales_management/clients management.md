@@ -8,20 +8,26 @@ sidebar_label: Clients Management
 
 ## Purpose 
 
-Manage existing customer recors and their associated devices 
+Manage existing customer records with relevant details.
+
 
 ## Table Columns
 
-| Field            | Description                        |
+| Field             | Description                        |
 |-------------------|------------------------------------|
 | Name              | Client or company representative   |
-| Role              | User access level                  |
 | Company           | Client's company name              |
 | Email             | Client's email                     |
-| Total Device      | Number of registered devices       |
+| Total Device(s)   | Number of registered devices       |
 
 
 **Features** 
-1. Navigate through multiple pages (pagination)
-2. View and edit client profiles
-3. Link to Admin Portal for advanced actions
+1. Client Table to Display all client records.
+2. Tabs to Separate clients by billing type
+3. Search to Filter and Quickly locate clients
+4. Add Client Register new customers
+5. View and edit client profiles
+
+**Actions**
+- View Details
+- Close Ticket
