@@ -10,16 +10,16 @@ sidebar_label: Home
 The Home Page provides an overview of Starlink services and their statuses.
 
 ## Features
-- **Starlinks Table**: Displays the name and status of each device.  
+- **Starlinks Table**: Displays the name, device ID, and connection status of each Starlink.
 - **Status Indicators**: Green for online devices, red for offline.  
-- **Interactive Map**: Visualizes device locations with zoom and fullscreen options.  
-- **Pagination**: Navigate through multiple device entries.  
-- **Actions Menu**: Provides quick options for managing Starlink records.  
-- **Search Bar**: Allows filtering of devices by name.  
+- **Interactive Map**: Shows device locations with zoom and fullscreen options.  
+- **Pagination**: Allows easy navigation through multiple device records.  
+- **Actions Menu**: Offers quick actions such as *View Details*, *Initiate Job*, and *Cancel*.
+- **Search Bar**: Enables users to filter and find Starlink devices by name or status instantly. 
 
 ---
 
 ## Navigation
-- **Home** → Returns to the device overview page.  
-- **Accounts** →
-- **Companies** → Redirects to billing details and payment history. 
+- **Home** → Returns to the Starlink device overview dashboard.
+- **Accounts** → Opens account management and profile settings.
+- **Companies** → Redirects to billing details, linked companies, and payment history.

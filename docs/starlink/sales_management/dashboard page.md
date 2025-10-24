@@ -44,4 +44,4 @@ The Dashboard serves as a quick access for system wide metrics and activity summ
 This menu provides essential tools for managing individual requests:
 - **View Details:** Opens a detailed summary of the client’s request, including status history and contact info.
 - **Initiate Job:** Starts the service or installation process. This action moves the request to the **Ongoing** category. 
-- **Cancel:** Marks the request as cancelled and removes it from active queues. |
+- **Cancel:** Marks the request as cancelled and removes it from active queues. 
