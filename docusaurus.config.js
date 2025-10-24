@@ -23,8 +23,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Ejiro404', // Usually your GitHub org/user name.
-  projectName: 'Projects-Documentations', // Usually your repo name.
+  organizationName: 'fbase-dev', // Usually your GitHub org/user name.
+  projectName: 'projects_documentation', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
